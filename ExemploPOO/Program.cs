@@ -6,12 +6,17 @@ namespace ExemploPOO
 	{
 		static void Main(string[] args)
 		{
-			Pessoa p1 = new Pessoa();
+			Retangulo ret = new Retangulo();
+			ret.DefinirMedidas(30, 30);
 
-			p1.Nome = "Marcos";
-			p1.Idade = 34;
+			System.Console.WriteLine($"Area: (ret.ObterArea())");
 
-			p1.Apresentar();
+			// Pessoa p1 = new Pessoa();
+
+			// p1.Nome = "Marcos";
+			// p1.Idade = 34;
+
+			// p1.Apresentar();
 		}
 	}
 }
