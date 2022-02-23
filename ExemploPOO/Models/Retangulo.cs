@@ -19,11 +19,12 @@ namespace ExemploPOO.Models
 				this.comprimento = comprimento;
 				this.largura = largura;
 				valido = true;
-			} else
-			{
-				System.Console.WriteLine("Valores inválidos")
 			}
-		
+			else
+			{
+				System.Console.WriteLine("Valores inválidos");
+			}
+
 		}
 
 		public double ObterArea()
@@ -31,12 +32,13 @@ namespace ExemploPOO.Models
 			if (valido)
 			{
 				return comprimento * largura;
-			} else 
+			}
+			else
 			{
-				System.Console.WriteLine("Informar valor maior que 0");
+				System.Console.WriteLine("Informar valores válidos maior que 0");
 				return 0;
 			}
-			
+
 		}
 	}
 }
