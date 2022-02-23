@@ -6,10 +6,13 @@ namespace ExemploPOO
 	{
 		static void Main(string[] args)
 		{
-			Retangulo ret = new Retangulo();
-			ret.DefinirMedidas(30, 30);
+			Retangulo ret1 = new Retangulo();
+			ret1.DefinirMedidas(30, 30);
+			System.Console.WriteLine($"Area: {ret1.ObterArea()}");
 
-			System.Console.WriteLine($"Area: (ret.ObterArea())");
+			Retangulo ret2 = new Retangulo();
+			ret2.DefinirMedidas(-10, 0);
+			System.Console.WriteLine($"Area: {ret2.ObterArea()}");
 
 			// Pessoa p1 = new Pessoa();
 
