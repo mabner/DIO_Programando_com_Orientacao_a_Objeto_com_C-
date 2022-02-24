@@ -6,19 +6,25 @@ namespace ExemploPOO
 	{
 		static void Main(string[] args)
 		{
-			Aluno a1 = new Aluno();
-			a1.Nome = 'Marcos';
-			a1.Idade = 34;
-			a1.Nota = 10;
-			
-			a1.Apresentar();
+			Calculadora calc1 = new Calculadora();
+			System.Console.WriteLine(calc1.Somar(5, 3));
 
-			Professor p1 = new Professor();
-			p1.Nome = 'Leidiane';
-			p1.Idade = 34;
-			p1.Salario = 16000;
-			
-			p1.Apresentar();
+			Calculadora calc2 = new Calculadora();
+			System.Console.WriteLine(calc2.Somar(5, 3, 2));
+
+			// Aluno a1 = new Aluno();
+			// a1.Nome = "Marcos";
+			// a1.Idade = 34;
+			// a1.Nota = 10;
+
+			// a1.Apresentar();
+
+			// Professor p1 = new Professor();
+			// p1.Nome = "Leidiane";
+			// p1.Idade = 34;
+			// p1.Salario = 16000;
+
+			// p1.Apresentar();
 
 			// Retangulo ret1 = new Retangulo();
 			// ret1.DefinirMedidas(30, 30);

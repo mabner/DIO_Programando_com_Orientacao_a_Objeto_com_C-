@@ -1,3 +1,5 @@
+using ExemploPOO.Models;
+
 namespace ExemploPOO
 {
 	public class Professor : Pessoa
