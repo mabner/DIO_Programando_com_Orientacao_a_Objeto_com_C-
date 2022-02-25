@@ -1,4 +1,5 @@
-﻿using ExemploPOO.Models;
+﻿using ExemploPOO.Helper;
+using ExemploPOO.Models;
 
 namespace ExemploPOO
 {
@@ -6,8 +7,13 @@ namespace ExemploPOO
 	{
 		static void Main(string[] args)
 		{
-			Calculadora calc = new Calculadora();
-			System.Console.WriteLine(calc.Somar(10, 25));
+			var caminho = "C:\\Development";
+
+			FileHelper fileHelper = new FileHelper();
+			fileHelper.ListarDiretorios(caminho);
+
+			// Calculadora calc = new Calculadora();
+			// System.Console.WriteLine(calc.Somar(10, 25));
 
 			// Computador comp = new Computador();
 			// System.Console.WriteLine(comp.ToString());
