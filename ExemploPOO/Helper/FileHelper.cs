@@ -22,7 +22,7 @@ namespace ExemploPOO.Helper
 		public void ListarArquivosDiretorios(string caminho)
 		{
 
-			var retornoArquivos = Directory.GetFiles(caminho);
+			var retornoArquivos = Directory.GetFiles(caminho, "*", SearchOption.AllDirectories);
 
 			// prints the directories inside the path
 			foreach (var item in retornoArquivos)
