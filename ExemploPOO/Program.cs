@@ -6,9 +6,12 @@ namespace ExemploPOO
 	{
 		static void Main(string[] args)
 		{
-			Corrente cc = new Corrente();
-			cc.Creditar(100);
-			cc.ExibirSaldo();
+			Computador comp = new Computador();
+			System.Console.WriteLine(comp.ToString());
+
+			// Corrente cc = new Corrente();
+			// cc.Creditar(100);
+			// cc.ExibirSaldo();
 
 			// Calculadora calc1 = new Calculadora();
 			// System.Console.WriteLine(calc1.Somar(5, 3));
