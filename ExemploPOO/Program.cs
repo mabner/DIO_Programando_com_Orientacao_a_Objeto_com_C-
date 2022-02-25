@@ -6,11 +6,15 @@ namespace ExemploPOO
 	{
 		static void Main(string[] args)
 		{
-			Calculadora calc1 = new Calculadora();
-			System.Console.WriteLine(calc1.Somar(5, 3));
+			Corrente cc = new Corrente();
+			cc.Creditar(100);
+			cc.ExibirSaldo();
 
-			Calculadora calc2 = new Calculadora();
-			System.Console.WriteLine(calc2.Somar(5, 3, 2));
+			// Calculadora calc1 = new Calculadora();
+			// System.Console.WriteLine(calc1.Somar(5, 3));
+
+			// Calculadora calc2 = new Calculadora();
+			// System.Console.WriteLine(calc2.Somar(5, 3, 2));
 
 			// Aluno a1 = new Aluno();
 			// a1.Nome = "Marcos";
