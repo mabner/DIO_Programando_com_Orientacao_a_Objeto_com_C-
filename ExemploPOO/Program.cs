@@ -11,7 +11,9 @@ namespace ExemploPOO
 
 			FileHelper fileHelper = new FileHelper();
 			// fileHelper.ListarDiretorios(caminho);
-			fileHelper.ListarArquivosDiretorios(caminho);
+			// fileHelper.ListarArquivosDiretorios(caminho);
+
+			fileHelper.CriarDiretorio(Path.Combine(caminho, "Pasta 1", "SubPasta 1"));
 
 			// Calculadora calc = new Calculadora();
 			// System.Console.WriteLine(calc.Somar(10, 25));

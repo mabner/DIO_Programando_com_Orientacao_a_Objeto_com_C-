@@ -30,5 +30,11 @@ namespace ExemploPOO.Helper
 				System.Console.WriteLine(item);
 			}
 		}
+
+		public void CriarDiretorio(string caminho)
+		{
+			var retorno = Directory.CreateDirectory(caminho);
+			System.Console.WriteLine(retorno.FullName);
+		}
 	}
 }
