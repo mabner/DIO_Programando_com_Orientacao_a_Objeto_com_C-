@@ -10,7 +10,8 @@ namespace ExemploPOO
 			var caminho = "C:\\Development";
 
 			FileHelper fileHelper = new FileHelper();
-			fileHelper.ListarDiretorios(caminho);
+			// fileHelper.ListarDiretorios(caminho);
+			fileHelper.ListarArquivosDiretorios(caminho);
 
 			// Calculadora calc = new Calculadora();
 			// System.Console.WriteLine(calc.Somar(10, 25));
