@@ -50,5 +50,17 @@ namespace ExemploPOO.Helper
 			}
 			else System.Console.WriteLine("Arquivo já existe");
 		}
+
+		public void CriarArquivoTextoStream(string caminho, List<string> conteudo)
+		{
+			using (var stream = File.CreateText(caminho))
+			{
+				foreach (var linha in conteudo)
+				{
+					// write on stream, stream writes on file
+					stream.WriteLine(linha);
+				}
+			}
+		}
 	}
 }
