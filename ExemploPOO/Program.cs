@@ -10,7 +10,9 @@ namespace ExemploPOO
 			var caminho = "/run/media/topgear/My Passport/@Backup_18_01_2022/dev/repo/cursos/DIO/Programando com Orientação a Objeto com C#/";
 			var caminhoPathCombine = Path.Combine(caminho, "Pasta 2");
 			var caminhoArquivo = Path.Combine(caminho, "Peixes.txt");
+
 			var listaString = new List<string> { "Pseudochromis Fridmani", "Ocelaris", "Kupang", "Yellow Coris" };
+			var listaStringAppend = new List<string> { "Anemona BBT Rainbow", "Duncan Coral" };
 
 			FileHelper fileHelper = new FileHelper();
 
@@ -24,7 +26,10 @@ namespace ExemploPOO
 
 			// fileHelper.CriarArquivoTexto(caminhoArquivo, "Teste de escrita em arquivo.\nArquivo de texto criado por código");
 
+			// Creates the file
 			fileHelper.CriarArquivoTextoStream(caminhoArquivo, listaString);
+			// Append aditional text to it
+			fileHelper.AdicionarArquivoTextoStream(caminhoArquivo, listaStringAppend);
 
 			// Calculadora calc = new Calculadora();
 			// System.Console.WriteLine(calc.Somar(10, 25));
