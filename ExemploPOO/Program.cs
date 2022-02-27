@@ -27,9 +27,11 @@ namespace ExemploPOO
 			// fileHelper.CriarArquivoTexto(caminhoArquivo, "Teste de escrita em arquivo.\nArquivo de texto criado por código");
 
 			// Creates the file
-			fileHelper.CriarArquivoTextoStream(caminhoArquivo, listaString);
+			// fileHelper.CriarArquivoTextoStream(caminhoArquivo, listaString);
 			// Append aditional text to it
-			fileHelper.AdicionarArquivoTextoStream(caminhoArquivo, listaStringAppend);
+			// fileHelper.AdicionarArquivoTextoStream(caminhoArquivo, listaStringAppend);
+
+			fileHelper.LerArquivoStream(caminhoArquivo);
 
 			// Calculadora calc = new Calculadora();
 			// System.Console.WriteLine(calc.Somar(10, 25));
