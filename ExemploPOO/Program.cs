@@ -38,7 +38,9 @@ namespace ExemploPOO
 
 			// fileHelper.MoverArquivo(caminhoArquivo, novoCaminhoArquivo, false);
 
-			fileHelper.CopiarArquivo(caminhoArquivoCopia, caminhoArquivoCopiaDestino, true);
+			// fileHelper.CopiarArquivo(caminhoArquivoCopia, caminhoArquivoCopiaDestino, true);
+
+			fileHelper.ApagarArquivo(caminhoArquivoCopiaDestino);
 
 			// Calculadora calc = new Calculadora();
 			// System.Console.WriteLine(calc.Somar(10, 25));

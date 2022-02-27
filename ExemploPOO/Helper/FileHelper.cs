@@ -116,5 +116,10 @@ namespace ExemploPOO.Helper
 		{
 			File.Copy(caminho, novoCaminho, sobrescrever);
 		}
+
+		public void ApagarArquivo(string caminho)
+		{
+			File.Delete(caminho);
+		}
 	}
 }
