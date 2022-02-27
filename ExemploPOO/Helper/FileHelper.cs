@@ -37,9 +37,9 @@ namespace ExemploPOO.Helper
 			System.Console.WriteLine(retorno.FullName);
 		}
 
-		public void ApagarDiretorio(string caminho)
+		public void ApagarDiretorio(string caminho, bool apagarArquivos)
 		{
-			Directory.Delete(caminho);
+			Directory.Delete(caminho, apagarArquivos);
 		}
 	}
 }

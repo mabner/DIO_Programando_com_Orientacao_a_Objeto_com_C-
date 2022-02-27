@@ -18,7 +18,7 @@ namespace ExemploPOO
 			// System.Console.WriteLine("Caminho: " + caminhoPathCombine);
 			// fileHelper.CriarDiretorio(caminhoPathCombine);
 
-			fileHelper.ApagarDiretorio(caminhoPathCombine);
+			fileHelper.ApagarDiretorio(caminhoPathCombine, true);
 
 			// Calculadora calc = new Calculadora();
 			// System.Console.WriteLine(calc.Somar(10, 25));
