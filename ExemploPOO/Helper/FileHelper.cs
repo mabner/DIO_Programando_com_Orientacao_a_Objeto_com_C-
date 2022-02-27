@@ -107,9 +107,14 @@ namespace ExemploPOO.Helper
 			}
 		}
 
-		public void MoverArquivo(string caminho, string novoCaminho)
+		public void MoverArquivo(string caminho, string novoCaminho, bool sobrescrever = false)
 		{
-			File.Move(caminho, novoCaminho);
+			File.Move(caminho, novoCaminho, sobrescrever);
+		}
+
+		public void CopiarArquivo(string caminho, string novoCaminho, bool sobrescrever = false)
+		{
+			File.Copy(caminho, novoCaminho, sobrescrever);
 		}
 	}
 }
