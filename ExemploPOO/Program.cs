@@ -7,13 +7,14 @@ namespace ExemploPOO
 	{
 		static void Main(string[] args)
 		{
-			var caminho = "C:\\Development";
+			var caminho = "/run/media/topgear/My Passport/@Backup_18_01_2022/dev/repo/cursos/DIO/Programando com Orientação a Objeto com C#/";
+			var caminhoPathCombine = Path.Combine(caminho, "Pasta 3", "SubPasta 3");
 
 			FileHelper fileHelper = new FileHelper();
 			// fileHelper.ListarDiretorios(caminho);
 			// fileHelper.ListarArquivosDiretorios(caminho);
-
-			fileHelper.CriarDiretorio(Path.Combine(caminho, "Pasta 1", "SubPasta 1"));
+			System.Console.WriteLine("Caminho: " + caminhoPathCombine);
+			fileHelper.CriarDiretorio(caminhoPathCombine);
 
 			// Calculadora calc = new Calculadora();
 			// System.Console.WriteLine(calc.Somar(10, 25));
