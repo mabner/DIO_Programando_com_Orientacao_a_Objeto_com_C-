@@ -9,6 +9,7 @@ namespace ExemploPOO
 		{
 			var caminho = "/run/media/topgear/My Passport/@Backup_18_01_2022/dev/repo/cursos/DIO/Programando com Orientação a Objeto com C#/";
 			var caminhoPathCombine = Path.Combine(caminho, "Pasta 2");
+			var caminhoArquivo = Path.Combine(caminho, "Arquivo.txt");
 
 			FileHelper fileHelper = new FileHelper();
 
@@ -18,7 +19,9 @@ namespace ExemploPOO
 			// System.Console.WriteLine("Caminho: " + caminhoPathCombine);
 			// fileHelper.CriarDiretorio(caminhoPathCombine);
 
-			fileHelper.ApagarDiretorio(caminhoPathCombine, true);
+			// fileHelper.ApagarDiretorio(caminhoPathCombine, true);
+
+			fileHelper.CriarArquivoTexto(caminhoArquivo, "Teste de escrita em arquivo.\nArquivo de texto criado por código");
 
 			// Calculadora calc = new Calculadora();
 			// System.Console.WriteLine(calc.Somar(10, 25));

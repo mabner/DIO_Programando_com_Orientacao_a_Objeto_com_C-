@@ -41,5 +41,14 @@ namespace ExemploPOO.Helper
 		{
 			Directory.Delete(caminho, apagarArquivos);
 		}
+
+		public void CriarArquivoTexto(string caminho, string conteudo)
+		{
+			if (!File.Exists(caminho))
+			{
+				File.WriteAllText(caminho, conteudo);
+			}
+			else System.Console.WriteLine("Arquivo já existe");
+		}
 	}
 }
